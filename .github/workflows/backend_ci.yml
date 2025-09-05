@@ -1,5 +1,6 @@
 # week07/.github/workflows/backend_ci.yml
 # Triggering Backend CI test - Shivani 
+# Trigger twice
 name: Backend CI - Test, Build and Push Images to ACR
 
 # Trigger the workflow on pushes to the 'main' branch
