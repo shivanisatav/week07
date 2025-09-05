@@ -120,11 +120,11 @@ jobs:
       uses: actions/checkout@v4
 
     # Azure login using a Service Principal secret
-    - name: Azure Login
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }} # Needs to be set as a GitHub Secret (Service Principal JSON)
-        allow-no-subscriptions: true
+    #- name: Azure Login
+    #  uses: azure/login@v1
+    #  with:
+    #    creds: ${{ secrets.AZURE_CREDENTIALS }} # Needs to be set as a GitHub Secret (Service Principal JSON)
+    #    allow-no-subscriptions: true
 
     # Login to Azure Container Registry (ACR)
     - name: Login to Azure Container Registry
