@@ -145,5 +145,5 @@ jobs:
 
     # Logout from Azure for security (runs even if image push fails)
     - name: Logout from Azure
-      run: az logout
+      run: az logout || echo "No active accounts to logout"
       if: always()
